@@ -4776,11 +4776,6 @@
     define(function () {
       return Decimal;
     });
-
-  // Node and other environments that support module.exports.
-  } else if (typeof module != 'undefined' && module.exports) {
-    module.exports = Decimal.default = Decimal.Decimal = Decimal;
-
   // Browser.
   } else {
     if (!globalScope) {
